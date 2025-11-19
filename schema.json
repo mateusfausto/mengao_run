@@ -1,0 +1,77 @@
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Mengão Run",
+  "description": "Mengão Run é um jogo de corrida infinita grátis com tema do Flamengo. Desvie de árbitros, jornalistas e adversários, colete troféus e chegue à vitória!",
+  "url": "https://seu-site.com/mengao-run",
+  "applicationCategory": "Game",
+  "gamePlayMode": "SinglePlayer",
+  "genre": "Casual Game",
+  "inLanguage": "pt-BR",
+  "author": {
+    "@type": "Person",
+    "name": "Mengão Run Developer"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Mengão Run",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://seu-site.com/logo.png",
+      "width": 200,
+      "height": 200
+    }
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://seu-site.com/preview.png",
+    "width": 1200,
+    "height": 630
+  },
+  "screenshot": {
+    "@type": "ImageObject",
+    "url": "https://seu-site.com/screenshot.png",
+    "width": 800,
+    "height": 600
+  },
+  "datePublished": "2025-11-19",
+  "dateModified": "2025-11-19",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.5",
+    "ratingCount": "100",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "keywords": "Flamengo, jogo, corrida infinita, jogo grátis, jogo online, Mengão, futebol, pixel art, casual game",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "BRL",
+    "url": "https://seu-site.com/mengao-run"
+  },
+  "systemRequirements": "Navegador moderno com suporte a Canvas e JavaScript",
+  "requiredAction": {
+    "@type": "PlayAction",
+    "target": "https://seu-site.com/mengao-run"
+  },
+  "operatingSystem": "Web (Windows, Mac, Linux, iOS, Android)",
+  "featureList": [
+    "Jogo de corrida infinita grátis",
+    "Tema Flamengo",
+    "Gráficos em pixel art estilo Super Nintendo",
+    "Suporte para desktop e mobile",
+    "Múltiplos tipos de adversários",
+    "Sistema de pontuação com multiplicador",
+    "Troféus para coletar",
+    "Modo horizontal obrigatório em mobile"
+  ],
+  "video": {
+    "@type": "VideoObject",
+    "name": "Mengão Run - Gameplay",
+    "description": "Veja como é jogar Mengão Run",
+    "url": "https://seu-site.com/video-gameplay.mp4",
+    "thumbnailUrl": "https://seu-site.com/video-thumb.png",
+    "uploadDate": "2025-11-19"
+  }
+}

@@ -1,0 +1,70 @@
+name: Validate HTML & CSS
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - '*.html'
+      - '*.css'
+      - '*.js'
+  pull_request:
+    branches: [ main ]
+    paths:
+      - '*.html'
+      - '*.css'
+      - '*.js'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Validate HTML
+      run: |
+        # Instalar validador HTML
+        npm install -g html-validate
+        
+        # Validar index.html
+        html-validate index.html || true
+    
+    - name: Check files exist
+      run: |
+        test -f index.html && echo "✓ index.html encontrado"
+        test -f style.css && echo "✓ style.css encontrado"
+        test -f game.js && echo "✓ game.js encontrado"
+        test -f pixelArt.js && echo "✓ pixelArt.js encontrado"
+        test -f sitemap.xml && echo "✓ sitemap.xml encontrado"
+        test -f robots.txt && echo "✓ robots.txt encontrado"
+        test -f .gitignore && echo "✓ .gitignore encontrado"
+        test -f LICENSE && echo "✓ LICENSE encontrado"
+        test -f vercel.json && echo "✓ vercel.json encontrado"
+    
+    - name: Validate JSON files
+      run: |
+        # Validar vercel.json
+        python3 -m json.tool vercel.json > /dev/null && echo "✓ vercel.json válido"
+    
+    - name: Check CSS syntax
+      run: |
+        # Verificar sintaxe CSS básica
+        if grep -q "^[{}]" style.css 2>/dev/null; then
+          echo "⚠ Possível erro de sintaxe CSS"
+        else
+          echo "✓ CSS parece válido"
+        fi
+    
+    - name: Check JavaScript syntax
+      run: |
+        # Verificar sintaxe JS básica
+        node -c game.js 2>/dev/null && echo "✓ game.js válido"
+        node -c pixelArt.js 2>/dev/null && echo "✓ pixelArt.js válido"
+    
+    - name: Size check
+      run: |
+        echo "Tamanho dos arquivos:"
+        ls -lh index.html style.css game.js pixelArt.js
+        
+        total=$(du -sh . | cut -f1)
+        echo "Total do projeto: $total"

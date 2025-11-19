@@ -1,0 +1,115 @@
+# Arquivos do Sistema Operacional
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Editores e IDEs
+.vscode/
+.idea/
+.sublime-project
+.sublime-workspace
+*.code-workspace
+*.swp
+*.swo
+*~
+.vim/
+*.iml
+.gradle/
+.classpath
+.project
+.settings/
+
+# Node.js
+node_modules/
+npm-debug.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Ambiente virtual
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Arquivos de ambiente
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+logs/
+
+# Arquivos temporários e de backup
+*.tmp
+*.temp
+*.bak
+*.backup
+*~
+.tmp/
+
+# Caches
+.cache/
+.pytest_cache/
+.coverage
+
+# Arquivos de lock do desenvolvimento
+.lock
+
+# Diretórios não necessários para deploy
+docs/dev/
+test/
+tests/
+spec/
+specs/
+coverage/
+.github/workflows/*.draft.yml
+
+# Arquivos específicos do projeto que não precisam versionar
+*.sublime-workspace
+.vscode/launch.json
+.vscode/settings.json
+
+# Não versionar arquivos de documentação interna
+DEVELOPMENT.md
+NOTES.md
+TODO.md
+
+# OS específicos
+.AppleDouble
+.LSOverride
+*.VC.db
+*.VC.VC.opendb

@@ -119,18 +119,57 @@ class Game {
             }
         });
 
-        // Botões da UI - com delegação de eventos
-        document.addEventListener('click', (e) => {
-            if (e.target.id === 'restartBtn') {
-                e.preventDefault();
-                e.stopPropagation();
+        // Botões da UI - com delegação de eventos e suporte a touch
+        const handleButtonClick = (e) => {
+            const button = e.target.closest('#restartBtn, #nextLevelBtn');
+            if (!button) return;
+            
+            e.preventDefault();
+            e.stopPropagation();
+            
+            if (button.id === 'restartBtn') {
                 this.restart();
-            } else if (e.target.id === 'nextLevelBtn') {
-                e.preventDefault();
-                e.stopPropagation();
+            } else if (button.id === 'nextLevelBtn') {
                 this.nextLevel();
             }
-        }, true); // Captura de eventos para garantir funcionamento
+        };
+        
+        document.addEventListener('click', handleButtonClick, true);
+        document.addEventListener('touchend', handleButtonClick, true);
+        
+        // Direct listeners como fallback
+        setTimeout(() => {
+            const restartBtn = document.getElementById('restartBtn');
+            const nextLevelBtn = document.getElementById('nextLevelBtn');
+            
+            if (restartBtn) {
+                restartBtn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    this.restart();
+                }, true);
+                
+                restartBtn.addEventListener('touchend', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    this.restart();
+                }, true);
+            }
+            
+            if (nextLevelBtn) {
+                nextLevelBtn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    this.nextLevel();
+                }, true);
+                
+                nextLevelBtn.addEventListener('touchend', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    this.nextLevel();
+                }, true);
+            }
+        }, 100);
     }
 
     /**

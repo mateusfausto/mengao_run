@@ -115,6 +115,8 @@ body {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.9);
     animation: fadeIn 0.3s ease-in;
+    pointer-events: none;
+    touch-action: none;
 }
 
 /* Aviso de Orientação */
@@ -141,6 +143,7 @@ body {
     justify-content: center;
     align-items: center;
     pointer-events: auto;
+    touch-action: auto;
 }
 
 .modal-content {
@@ -154,6 +157,7 @@ body {
     box-shadow: 0 0 50px rgba(196, 30, 58, 0.8);
     animation: slideIn 0.3s ease-out;
     pointer-events: auto;
+    touch-action: auto;
 }
 
 @keyframes slideIn {
@@ -217,9 +221,14 @@ body {
     text-transform: uppercase;
     box-shadow: 0 0 10px rgba(196, 30, 58, 0.5);
     pointer-events: auto;
+    touch-action: auto;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     user-select: none;
+    -webkit-appearance: none;
+    appearance: none;
+    min-width: 120px;
+    min-height: 50px;
 }
 
 .restart-btn:hover {

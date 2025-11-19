@@ -38,14 +38,6 @@ Um jogo de corrida infinita grátis com tema do Flamengo, desenvolvido com HTML5
 | Coletar um troféu | 50 × multiplicador |
 | Vencer (atingir 5000m) | 500 × multiplicador |
 
-## 👥 Tipos de Adversários
-
-| Tipo | Descrição | Cor |
-|------|-----------|-----|
-| **Jogador Rival** | Camisa verde com detalhe de bola | Verde #228B22 |
-| **Árbitro** | Camisa amarela, calção preto | Amarela #FFFF00 |
-| **Jornalista** | Camisa azul, microfone na mão | Azul #0066FF |
-
 ## 🎯 Dificuldade Progressiva
 
 - **Fase 1** (0-15 adversários): 70% chance de 1 inimigo, 30% de 2
@@ -54,96 +46,6 @@ Um jogo de corrida infinita grátis com tema do Flamengo, desenvolvido com HTML5
 
 A velocidade aumenta conforme o progresso e novos níveis trazem metas maiores.
 
-## 📁 Estrutura de Arquivos
-
-```
-mengao_run/
-├── index.html          # HTML com meta tags SEO
-├── style.css           # Estilos responsivos
-├── game.js             # Lógica do jogo
-├── pixelArt.js         # Renderização Canvas
-├── sitemap.xml         # Mapa do site
-├── robots.txt          # Configuração para crawlers
-├── schema.json         # Structured data JSON-LD
-├── .htaccess           # Configuração Apache
-└── README.md           # Este arquivo
-```
-
-## 🌐 SEO e Otimização
-
-### Meta Tags Implementadas
-
-✓ Meta descrição otimizada  
-✓ Keywords relevantes  
-✓ Open Graph (Facebook, LinkedIn)  
-✓ Twitter Card  
-✓ Canonical URL  
-✓ JSON-LD Structured Data  
-✓ Favicon emoji  
-
-### Otimizações Implementadas
-
-1. **Performance**
-   - Compressão GZIP
-   - Cache do navegador inteligente
-   - Image rendering otimizado
-
-2. **Segurança**
-   - HTTPS obrigatório
-   - Headers de segurança
-   - Política de segurança de conteúdo
-
-3. **Indexação**
-   - Sitemap.xml configurado
-   - Robots.txt otimizado
-   - Structured data JSON-LD
-   - Schema.org markup
-
-## 🚀 Deploy Rápido
-
-### GitHub Pages (Recomendado)
-```bash
-git push origin main
-# Ativar em Settings > Pages > main branch
-# URL: https://seu-usuario.github.io/mengao-run
-```
-
-### Vercel
-```bash
-# Conectar repositório GitHub
-# Deploy automático ao fazer push
-```
-
-### Netlify
-```bash
-# Conectar repositório GitHub
-# Deploy contínuo
-```
-
-### Servidor Apache
-- Copiar `.htaccess` para raiz
-- Ativar mod_rewrite e mod_deflate
-
-## 🔍 Otimizações para Produção
-
-1. **Atualizar URLs**
-   - schema.json: substituir `seu-site.com`
-   - sitemap.xml: adicionar URLs reais
-   - robots.txt: configurar domínio
-
-2. **Adicionar imagens de preview**
-   - OG Image: 1200x630px
-   - Screenshot: 800x600px
-
-3. **Google Analytics**
-   ```html
-   <script async src="https://www.googletagmanager.com/gtag/js?id=GA_ID"></script>
-   ```
-
-4. **Google Search Console**
-   - Enviar sitemap.xml
-   - Verificar indexação
-   - Monitorar erros
 
 ## 🛠️ Tecnologias Utilizadas
 
@@ -161,30 +63,6 @@ git push origin main
 - ✓ Mobile paisagem (otimizado)
 - ✓ iPhone em paisagem especial
 
-## 🎨 Cores e Design
-
-```css
-Vermelho Flamengo:  #c41e3a
-Amarelo:            #ffff00
-Verde Grama:        #228B22
-Azul Jornalista:    #0066ff
-Preto:              #000000
-Bege Pele:          #d4a574
-```
-
-## 📈 Checklist de Publicação
-
-- [ ] Atualizar URLs em schema.json, sitemap.xml, robots.txt
-- [ ] Adicionar imagens de preview (OG)
-- [ ] Testar em múltiplos navegadores
-- [ ] Validar HTML/CSS com W3C
-- [ ] Google PageSpeed Insights > 90
-- [ ] Submeter sitemap ao Google Search Console
-- [ ] Configurar analytics
-- [ ] Testar som em todos os navegadores
-- [ ] Testar responsividade mobile
-- [ ] Testar controles (teclado, touch, mouse)
-
 ## 🐛 Troubleshooting
 
 ### Sons não funcionam
@@ -195,22 +73,6 @@ Bege Pele:          #d4a574
 
 ### Controles não respondem
 → Clicar no canvas antes de usar teclado, limpar localStorage.
-
-## 📊 Estatísticas do Projeto
-
-- **Linhas de código**: 1500+
-- **Arquivos principais**: 4 (HTML, CSS, 2x JS)
-- **Tamanho total**: ~50KB (não minificado)
-- **Tamanho gzip**: ~15KB
-- **Compatibilidade**: Chrome, Firefox, Safari, Edge
-- **Suporte mobile**: iOS, Android, Windows Phone
-
-## 🔗 Links Úteis
-
-- [Chrome Dino Game](https://chromedino.com/) - Inspiração
-- [Canvas API MDN](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API)
-- [Web Audio API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API)
-- [Schema.org](https://schema.org/) - Structured Data
 
 ## 📝 Licença
 
@@ -229,25 +91,6 @@ Encontrou algum problema? Sinta-se livre para reportar issues ou enviar sugestõ
 - **Canvas 2D API**: Renderização de gráficos
 - **Web Audio API**: Geração procedural de sons
 
-## 🎨 Design de Pixel Art
-
-Todos os sprites são desenhados pixel-by-pixel usando Canvas 2D:
-
-### Personagem Principal (Flamengo):
-- Camisa listrada em vermelho e preto
-- Calção preto
-- Animação de corrida com movimento de pernas
-
-### Adversários:
-- Camisa verde
-- Calção branco
-- Mesma animação de movimento
-
-### Elementos:
-- Fundo com céu, torcida e gramado
-- Estrelas (bônus)
-- Bandeira de meta (cores do Flamengo)
-
 ## 🔊 Sistema de Som
 
 O jogo utiliza Web Audio API para gerar sons dinamicamente:
@@ -261,8 +104,8 @@ O jogo utiliza Web Audio API para gerar sons dinamicamente:
 
 A dificuldade aumenta automaticamente:
 
-- Velocidade dos inimigos aumenta a cada 5 inimigos desvitados
-- Taxa de spawn de inimigos diminui (mais frequência)
+- Velocidade dos adversários aumenta a cada 5 desviados
+- Taxa de spawn de adversários diminui (mais frequência)
 - Multiplicador cresce conforme você coleta bônus
 - Cada nível (após vitória) aumenta a velocidade base
 
@@ -279,20 +122,6 @@ O jogo é otimizado para diferentes tamanhos de tela:
 - Tablet (suportado)
 - Mobile (suportado com ajustes CSS)
 
-## ⚙️ Instalação e Uso
-
-### Local:
-1. Clone ou baixe os arquivos do projeto
-2. Abra `index.html` em um navegador moderno
-3. Comece a jogar!
-
-### Online:
-- Deploy em plataformas como:
-  - GitHub Pages
-  - Vercel
-  - Netlify
-  - Replit
-
 ## 🐛 Requisitos do Navegador
 
 - Chrome 90+
@@ -306,18 +135,6 @@ Funcionalidade completa com suporte a:
 - localStorage
 - ES6 JavaScript
 
-## 🎯 Futuras Melhorias
-
-Ideias para expansão do jogo:
-
-- [ ] Power-ups especiais (escudo, velocidade)
-- [ ] Diferentes tipos de adversários com padrões distintos
-- [ ] Cenários variados (dia/noite, chuva)
-- [ ] Leaderboard online
-- [ ] Modo multijogador local
-- [ ] Efeitos visuais adicionais (partículas)
-- [ ] Skin alternativas do jogador
-- [ ] Achievements/Conquistas
 
 ## 📝 Notas de Desenvolvimento
 
@@ -326,11 +143,6 @@ Ideias para expansão do jogo:
 - Otimização de colisões com AABB (Axis-Aligned Bounding Box)
 - Limpeza de objetos fora da tela para economizar memória
 
-### Código:
-- Orientado a objetos com classes ES6
-- Bem documentado com comentários
-- Estrutura modular e reutilizável
-- Sem dependências externas
 
 ## 🔗 Recursos
 
@@ -338,12 +150,5 @@ Ideias para expansão do jogo:
 - [Web Audio API MDN](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API)
 - [Pixel Art Tutorial](https://en.wikipedia.org/wiki/Pixel_art)
 
-## 📄 Licença
-
-Projeto livre para uso educacional e pessoal.
-
----
-
-**Desenvolvido com ❤️ para os torcedores do Mengão!**
 
 Vamo Flamengo! 🔴⚫

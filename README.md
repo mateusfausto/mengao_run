@@ -5,7 +5,7 @@ Um jogo de corrida infinita grátis com tema do Flamengo, desenvolvido com HTML5
 ## 🎮 Sobre o Jogo
 
 **Mengão Run** é um jogo casual infinito onde você controla um jogador do Flamengo que precisa:
-- ✓ Desviar de **árbitros**, **jornalistas** e **adversários rivais**
+- ✓ Desviar de adversários
 - ✓ Coletar **troféus** pulando
 - ✓ Atingir a **meta de 5000 metros** para vencer
 - ✓ Acumular pontos com **multiplicador progressivo**
